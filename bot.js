@@ -140,4 +140,4 @@ class Reactions extends Client{
         })
     }
 };
-new Reactions().login(config.token).catch((error) => console.log(`ERROR: ${error.stack}`))
+new Reactions().login(process.env.TOKEN).catch((error) => console.log(`ERROR: ${error.stack}`))
